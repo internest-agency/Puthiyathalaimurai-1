@@ -1,0 +1,190 @@
+*{
+  margin:unset;
+  padding: unset;
+  box-sizing: border-box;
+}
+
+:root{
+  --brand-color: #521010;
+  --yellow-color: #dd9f18;
+  --green-color: #4fc62e;
+  --font-color: #222831;
+  --table-border: #e9e9e9;
+  --onbrand-color: #ffffff;
+  --support-color: #65647C;
+  --social-color: #000000;
+}
+
+body{
+  font-size: 100%;
+  line-height: 1.75;
+  font-family: "Noto Sans Tamil", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+  'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: var(--font-color);
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section{
+  border-bottom: 1px solid var(--table-border);
+}
+.programs,
+.sponsors,
+.footer{
+  padding: 56px 0;
+}
+
+/* --------- 1. Hero Section --------------*/
+.hero-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 16px;
+}
+
+.republic img{
+  width: 100%;
+}
+
+/* --------- 2. Journey Section --------------*/
+.journey-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 16px;
+}
+
+.col{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content{
+  display: none;
+}
+
+.content.active{
+  display: block;
+}
+
+.day{
+  color: var(--support-color);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+}
+.place{
+  font-size: 3.2rem;
+  font-weight: 700;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: var(--social-color);
+  -webkit-text-stroke: 1px;
+}
+
+.map{
+  display: none;
+  height: 100%;
+}
+
+.map.active{
+  display: block;
+}
+
+.travelled-bus{
+  max-height: 350px;
+  height: 100%;
+}
+
+/* --------- 3. Programs Section --------------*/
+.section-title{
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Table */
+table.program-table,
+.program-table th,
+.program-table td{
+  border: 1px solid var(--table-border);
+  border-collapse: collapse;
+  padding: 8px 16px;
+  text-align: left;
+}
+
+.program-table thead{
+  background-color: var(--brand-color);
+  color: var(--onbrand-color);
+  line-height: 1.3;
+}
+
+.program-table th,
+.program-table td:first-child{
+  text-wrap: nowrap;
+}
+
+.program-table th{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.program-table td:first-child{
+  text-align: center;
+}
+
+/* --------- 4. Sponsors Section --------------*/
+
+.sponsors-container{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.sponsors-container .group{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.sponsors-container img{
+  width: auto;
+  height: 100px;
+}
+
+.sponsor, .title{
+  text-align: center;
+}
+
+h4.title{
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* --------- 4. Sponsors Section --------------*/
+
+.footer-container, .social-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-container{
+  margin-top: 24px;
+}
+
+.corporations img{
+  width: auto;
+  height: 60px;
+}
+
+.social a{
+  color: var(--social-color);
+  text-decoration: none;
+  font-size: 18px;
+}
