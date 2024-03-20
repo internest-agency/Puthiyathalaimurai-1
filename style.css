@@ -23,14 +23,18 @@ body{
   color: var(--font-color);
 }
 
+section{
+  border-bottom: 1px solid var(--table-border);
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
 .container{
+  scroll-snap-align: start;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-section{
-  border-bottom: 1px solid var(--table-border);
-}
 .programs,
 .sponsors,
 .footer{
